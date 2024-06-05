@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6474384cc8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Expertise</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer - Frontend Heavy</p>
+                <h1>Hi, I'm <span class="rohan">ROHAN</span><br>From New Delhi, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="Rohan Gotwal">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Software Developer with experience in developing high-performance web
+                        applications. I specialize in frontend development with a strong focus on creating dynamic and
+                        responsive user interfaces.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="head">Languages:</span><br/> JavaScript (ES5/ES6), Typescript, C, C++, HTML5, CSS3, Python, PHP</li>
+                            <li><span class="head">Frameworks & Libraries:</span><br/> React.js, Next.js, Redux, JQuery, Node.js, Express.js, Nest.js, MongoDB, Firebase</li>
+                            <li><span class="head">Tools:</span><br/> Git, Github, Gitlab, Postman, REST APIs, Figma, Linux</li>
+                            <li><span class="head">Skills:</span><br/> Frontend, Backend, Open Source</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="head">Software Developer at Nordstone, UK</span><br /><span>(August 2023 -
+                                    February 2024):</span><br />
+                                Developed web applications, integrated APIs, optimized existing projects, and
+                                implemented impactful features using technologies like Next.js, Redux, and PostgreSQL.
+                            </li>
+                            <li><span class="head">Software Developer at Code For Gov Tech</span><br /><span>(July 2023
+                                    - September 2023):</span><br />
+                                Contributed to Digital Public Good, developed PWA, handled high traffic, and merged
+                                significant pull requests.
+                            </li>
+                            <li><span class="head">Front-End Developer at EventGraphia Pvt Ltd</span><br /><span>(May
+                                    2022 - July 2023):</span><br />
+                                Improved performance, led frontend development, and enhanced UI using Django, React, and
+                                other technologies.
+                            </li>
+                            <li><span class="head">Software Developer at Curious Junior Pvt
+                                    Ltd</span><br /><span>(November 2021 - February 2022):</span><br />
+                                Built JavaScript web applications for kids to learn coding, handling high traffic and
+                                ensuring accessibility.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2023:</span> Bachelor in Computer Applications, Maharaja Surajmal
+                                Institute, CGPA: 9.5/10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>Expertise in React.js, Next.js, JavaScript, TypeScript. 3 years of experience.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-server"></i>
+                    <h2>Full Stack Developer</h2>
+                    <p>Worked as a Full Stack developer creating APIs, integrating them, testing with Jest and Cypress, deploying on AWS and Netlify.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UI/UX Knowledge</h2>
+                    <p>Good knowledge of creating user-friendly UI for scalable applications.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work.png" alt="Trendscape">
+                    <div class="layer">
+                        <h3>Trendscape (E-commerce)</h3>
+                        <p>Developed an e-commerce platform with advanced features like lazy loading and real-time
+                            updates. <a href="https://trendscape.vercel.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a></p>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                <img src="images/work-2.png" alt="Social Media App">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A platform connecting talented people around the world. <a href="#"><i class="fas fa-external-link-alt"></i></a></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Music App">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Connects users with talented musicians worldwide. <a href="#"><i class="fas fa-external-link-alt"></i></a></p>
+                </div>
+            </div> -->
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> rohangotwal3@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8700490812</p>
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://twitter.com/Rohan27s" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <!-- <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
+                        <a href="https://linkedin.com/in/rohan-gotwal" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Rohan_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rohan Gotwal</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybkX-rb5OPo5sEOQOufme3NC83DTQcgEComqBNufwsIcdS69Cb828W4QG-ZuHyyTjEtg/exec' 
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (response.ok) {
+                        msg.textContent = "Message sent successfully";
+                        setTimeout(function () {
+                            msg.textContent = "";
+                        }, 5000);
+                        form.reset(); // Clear the form fields
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.textContent = "There was an error sending your message. Please try again later.";
+                });
+        });
+    </script>
+    
+</body>
+
+</html>
